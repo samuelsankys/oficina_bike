@@ -1,0 +1,92 @@
+<%- layout('partials/header.ejs')%>
+
+
+  <title>BotTrading</title>
+</head>
+
+<body>
+
+<div class="container">
+  <% if(cadastrarMensagem.length > 0){%>
+    <div class="alert alert-danger"> <%= cadastrarMensagem %></div>
+    <% } %>
+
+    <div class="row mt-5">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header">
+            <h3>Cadastrar</h3>
+          </div>
+          <div class="card-body">
+            
+            <form id="formCadastrar" action="/cadastrar" method="POST">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nome">Nome</label>
+                  <input type="text" name="nome" class="form-control" id="nome" placeholder="Insina seu nome completo">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="cpf">Cpf</label>
+                  <input type="text" name="cpf" class="form-control" id="cpf" placeholder="Insira seu CPF">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="telefone">Telefone</label>
+                  <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Insira seu Telefone">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="bairro">Cidade-UF</label>
+                  <input type="text" name="cidade" class="form-control" id="cidade" placeholder="Ex.: Petrolina-PE">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="password">Senha</label>
+                  <input type="password" name=password class="form-control" id="password" placeholder="Insira a Senha">
+                  <small id="password" class="form-text text-muted">Senha da Plataforma IqOption</small>
+                </div>
+              </div>
+  
+  
+              <button type="submit" class="btn btn-block mt-4 btn-primary">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

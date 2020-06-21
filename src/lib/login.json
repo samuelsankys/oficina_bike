@@ -1,0 +1,4 @@
+[
+    {"id": 1, "email": "samuel_sankys@hotmail.com", "senha" : "samuelsk8", "API":"<iqoptionapi.stable_api.IQ_Option object at 0x7f92683b7c50>", "cpf":"08943704488", "primeiro_acesso": 1, "data_pagamento":"2020-05-06", "admin": "1"},
+    {"id": 2, "email": "samuell_sankys@hotmail.com", "senha" : "123456", "API":"oi", "cpf":"08943704487", "primeiro_acesso": 1, "data_pagamento":"2020-05-06", "admin": "0"}
+]
