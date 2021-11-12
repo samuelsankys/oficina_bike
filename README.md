@@ -1,2 +1,3 @@
 # oficina_bike
-Sistema básico desenvolvido para uma oficina de bicicleta
+
+System focused on inventory, sales and customer control for a workshop
